@@ -5,6 +5,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import App from './App.jsx'
 import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
+import Register from './pages/Register.jsx'
 import Board from './pages/Board.jsx'
 import NotFound from './pages/NotFound.jsx'
 
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="" element={<App />}>
         <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/board" element={<Board />} />
         <Route path="/*" element={<NotFound />} />

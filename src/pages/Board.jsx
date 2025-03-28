@@ -1,6 +1,6 @@
 import React from "react";
 
-function Board() {
+const Board = () => {
     return (
         <div>
         <h1>Board Page</h1>
