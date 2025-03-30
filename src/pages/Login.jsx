@@ -1,13 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 import '../assets/fonts/css/fontello.css'
+
 
 const Login = () => {
   const [authState, setAuthState] = useState(0);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const nav = useNavigate();
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -32,8 +36,7 @@ const Login = () => {
         password: password
       });
       
-      localStorage.setItem('token', result.data.token);
-      window.location.href = '/board';
+      nav("/board");
     } catch(err) {
       if(err.response.status === 401) {
         setAuthState(2);

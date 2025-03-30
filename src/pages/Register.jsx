@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 import '../assets/fonts/css/fontello.css'
@@ -9,6 +10,8 @@ const Register = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const nav = useNavigate();
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);  
@@ -38,8 +41,7 @@ const Register = () => {
         password: password
       });
       
-      localStorage.setItem('token', result.data.token);
-      window.location.href = '/login';
+      nav("/login");
     } catch(err) {
       if(err.response.status === 409) {
         setAuthState(2);
