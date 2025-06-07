@@ -1,0 +1,119 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em;
+  background-color: #212529;
+  box-shadow: 0px 0px 8px black;
+  z-index: 1;
+}
+
+.separator {
+  width: 100%;
+  border-top: 1px solid #B9B8B8;
+}
+
+.navbar-menu {
+  background-color: #212529;
+  box-shadow: 0px 1px 4px rgb(11, 11, 11);
+  position: fixed;
+  top: 5.5em;
+  right: -15em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+  gap: 0.2em;
+  z-index: 2;
+  transition: all 300ms;
+}
+
+.navbar-menu-open {
+  background-color: #212529;
+  box-shadow: 0px 1px 4px rgb(11, 11, 11);
+  position: fixed;
+  top: 5.5em;
+  right: 0.2em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+  gap: 0.2em;
+  z-index: 2;
+  transition: all 300ms;
+}
+
+.menu-account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-username {
+  margin: 0;
+  font-size: 20px;
+}
+
+.menu-email {
+  margin: 0;
+  font-size: 12px;
+  color: #B9B8B8;
+}
+
+.logo {
+  padding: 1.5em 2em;
+  margin: 0px;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  padding: 0em 2em;
+  gap: 1em;
+  height: 100%;
+  transition: all 350ms;
+}
+
+.navbar-user:hover {
+  background-color: #2c2f3a;
+  cursor: pointer;
+}
+
+.navbar-avatar {
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-avatar {
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0 0 0 1em;
+}
+
+.menu-button {
+  color: #B9B8B8;
+  text-decoration: inherit;
+  padding: 0 6em 0 1em;
+  text-align: left;
+}
+
+.menu-button:hover {
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,55 @@
+.sidebar {
+    padding: 0;
+    width: 25em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #212529;
+    z-index: -1;
+    box-shadow: 0px 0px 4px black;
+}
+
+.portrait {
+    margin-top: 2em;
+    width: 6em;
+    border-radius: 50%;
+    background-color: brown;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+}
+
+.portrait-letter {
+    margin: 0;
+    padding: 0;
+    font-weight: light;
+}
+
+.username {
+    margin: 0.5em 0em 0.5em 0em;
+    padding: 0;
+    font-weight: bolder;
+    color: white;
+}
+
+.email {
+    margin: 0em 0em 0.5em 0em;
+    padding: 0;
+    color: #B9B8B8;
+    font-weight: lighter;
+}
+
+.sidebar-hr {
+    width: 100%;
+    height: 1px;
+    background-color: #878d93;
+    margin: 1em 0em 1em 0em;
+}
+
+.sidebar-button {
+    width: 100%;
+    padding: 0.5em;
+}

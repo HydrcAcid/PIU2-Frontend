@@ -1,16 +1,16 @@
 import { useState } from 'react'
-import {Outlet} from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from './components/Navbar.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
 
   return (
     <>
-      <Navbar/>
-      <Outlet/>
-      <Footer/>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </>
   )
 }
